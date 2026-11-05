@@ -279,6 +279,16 @@ describe("E24Recovery (E24-RFC-0001 §6.7)", function () {
   });
 
   describe("colusión de guardianes", function () {
+    it("límite conocido: k guardianes pueden cancelar la salida del titular una y otra vez", async function () {
+      const ctx = await loadFixture(activa);
+      const { recovery, registry, id, g } = ctx;
+      for (let vuelta = 0; vuelta < 2; vuelta++) {
+        await pedirCambio(ctx, ctx.titular, id);
+        await expect(cancelarCambio(ctx, g.slice(0, 3))).to.emit(recovery, "ChangeCancelled");
+      }
+      expect(await registry.identityOwner(id)).to.equal(recovery.target);
+    });
+
     it("la clave activa más un guardián que no aprobó vetan la recuperación", async function () {
       const ctx = await loadFixture(activa);
       const atacante = cuenta("atacante");

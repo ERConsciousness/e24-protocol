@@ -10,8 +10,9 @@ La especificación es [E24-RFC-0001](rfc/E24-RFC-0001-did-e24.md), en estado de 
 
 | Pieza | Estado |
 |---|---|
-| Especificación | Borrador v0.5.4 |
+| Especificación | Borrador v0.5.5 |
 | Contratos | Desplegados en Base Sepolia, sin auditoría externa |
+| Defecto conocido | Ocupación del hash de un ancla, sin corregir. [Comentarios abiertos](docs/solicitud-comentarios-01-anclas-y-alcance.md) |
 | Operaciones en la cadena | Ninguna todavía. El flujo completo solo se ha ensayado en red local |
 | SDK en JS (cryptosuite, resolver y verificador) | Implementación de referencia; solo lee ERC-1056 y `E24AnchorRegistry` |
 | Contexto JSON-LD `v1` | En este repositorio; aún no publicado en `estado24.com` |
@@ -54,7 +55,7 @@ La coincidencia exacta prueba que el bytecode corresponde al código fuente, no 
 | `scripts/` | Despliegue, verificación y demo |
 | `lab-simulacion-e24/` | Simulación en Python del ciclo de vida, en red `sim` |
 | `despliegues/` | Registro del despliegue |
-| `docs/` | Anuncio técnico del despliegue |
+| `docs/` | Anuncio técnico del despliegue y solicitudes de comentarios |
 
 **Las claves y semillas del test vector, las pruebas y la simulación son públicas y solo sirven para pruebas.** Nunca las uses para nada de valor.
 

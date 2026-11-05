@@ -106,6 +106,15 @@ describe("E24AnchorRegistry (E24-RFC-0001 §7.5)", function () {
       .to.be.revertedWithCustomError(ctx.anchors, "AlreadyAnchored");
   });
 
+  it("defecto conocido (§14): un tercero puede ocupar el hash antes que el emisor legítimo", async function () {
+    const ctx = await loadFixture(base);
+    const hash = hashDe("ocupado");
+    await ctx.anchors.connect(ctx.otro).anchorCredential(ctx.otro.address, hash);
+    await expect(anclarFirmado(ctx, ctx.emisor, ctx.emisor.address, hash))
+      .to.be.revertedWithCustomError(ctx.anchors, "AlreadyAnchored");
+    expect((await ctx.anchors.anchors(hash)).issuer).to.equal(ctx.otro.address);
+  });
+
   it("ancla un delegado veriKey vigente; uno sigAuth no", async function () {
     const ctx = await loadFixture(base);
     const { registry, relayer, emisor, d1, d2 } = ctx;

@@ -18,6 +18,7 @@ Indica la versión del RFC o el commit, y cómo reproducirlo. Es un proyecto peq
 ## Limitaciones conocidas
 
 - Los contratos desplegados no se pueden actualizar: no tienen administrador. Una corrección implica un despliegue nuevo y una versión nueva del RFC.
+- Un tercero que conozca el hash de una credencial puede ocuparlo antes que su emisor (RFC §14), y una mayoría de guardianes puede cancelar la salida del titular.
 - La identidad es seudónima, no anónima (RFC §9.1).
 - El cortafuego entre identidad y fondos todavía no existe.
 

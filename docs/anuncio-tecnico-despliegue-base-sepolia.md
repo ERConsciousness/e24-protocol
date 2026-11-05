@@ -73,6 +73,10 @@ La coincidencia exacta prueba que el bytecode corresponde al código fuente publ
 
 **Formulación que todavía no corresponde:** "El protocolo está operando en testnet desde el 3 de noviembre." Para eso, primero tiene que haber operaciones en la cadena.
 
+## Actualización del 5 de noviembre de 2026
+
+Se registró un defecto conocido en `E24AnchorRegistry`: un tercero que conozca el hash de una credencial puede ocuparlo antes que su emisor. No permite falsificarla, y no hay anclas afectadas. Una corrección implicaría desplegar ese contrato de nuevo, y su dirección cambiaría. Ver RFC v0.5.5 §14 y la [solicitud de comentarios](solicitud-comentarios-01-anclas-y-alcance.md).
+
 ---
 
 © 2026 Ethereal Realms Consciousness LLC y contribuidores · Código: Apache 2.0 · Especificación: CC BY 4.0.

@@ -147,6 +147,17 @@ describe("SDK JS (tercera implementación de la cryptosuite)", function () {
       expect(r.validez).to.deep.equal({ 1: true, 2: false, 3: false, 4: true });
     });
 
+    it("defecto conocido (§14): un ancla ocupada por otro emisor no valida la credencial", async function () {
+      const ctx = await desplegar();
+      await ctx.anchors.connect(ctx.otro).anchorCredential(ctx.otro.address, VECTOR.anclaEsperada.hash);
+      const r = await verificarPresentacion({ credencial: CEDULA, reto: VECTOR.reto }, {
+        registry: ctx.registry, anchors: ctx.anchors, ahora: AHORA,
+        nonce: VECTOR.reto.nonce, dominio: VECTOR.reto.dominio, listas: VECTOR.listasConfianza, raices: [URL_A],
+      });
+      expect(r.valida).to.equal(false);
+      expect(r.motivos).to.include("3: el emisor del ancla no coincide");
+    });
+
     it("rechaza otro nonce, un reto vencido y una credencial revocada", async function () {
       const { opciones, anchors, relayer, emisor } = await loadFixture(base);
       const p = { credencial: CEDULA, reto: VECTOR.reto };
