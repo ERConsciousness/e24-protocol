@@ -29,7 +29,7 @@ Desplegado el 3 de noviembre de 2026, a las 17:08:41 UTC. Datos completos en [de
 | `E24AnchorRegistry` | [`0x9c70A6c7DA22C9beb03C828F64fCae073608C3B2`](https://base-sepolia.blockscout.com/address/0x9c70A6c7DA22C9beb03C828F64fCae073608C3B2?tab=contract) | `0x9477058f3143353533f7c82364a5453fa9ecf89aad73b0b0672233897de09f3d` |
 | `E24Recovery` | [`0xF076d4aD5Ad7d26545BF900d91CCAEf0321548D1`](https://base-sepolia.blockscout.com/address/0xF076d4aD5Ad7d26545BF900d91CCAEf0321548D1?tab=contract) | `0xe1b37576bda08cabb143c35473dc12d615400f07f42e8f4ad5fff53443602c93` |
 
-Compilador: solc 0.8.24, optimizador con 200 runs, EVM `cancun`.
+Compilador: solc 0.8.24, optimizador con 200 runs, EVM `cancun`. Ver el [anuncio técnico](docs/anuncio-tecnico-despliegue-base-sepolia.md).
 
 ### Cómo comprobar el código desplegado
 
@@ -54,6 +54,7 @@ La coincidencia exacta prueba que el bytecode corresponde al código fuente, no 
 | `scripts/` | Despliegue, verificación y demo |
 | `lab-simulacion-e24/` | Simulación en Python del ciclo de vida, en red `sim` |
 | `despliegues/` | Registro del despliegue |
+| `docs/` | Anuncio técnico del despliegue |
 
 **Las claves y semillas del test vector, las pruebas y la simulación son públicas y solo sirven para pruebas.** Nunca las uses para nada de valor.
 
