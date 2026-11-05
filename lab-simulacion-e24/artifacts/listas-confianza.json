@@ -1,0 +1,72 @@
+{
+  "descargo": "SIMULACIÓN EDUCATIVA · red sim · claves de prueba · personas y comunidades ficticias · sin validez jurídica",
+  "contenido": {
+    "https://comunidad-a.example/.well-known/e24-lista-confianza.json": {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://estado24.com/ns/e24/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "ListaConfianzaE24"
+      ],
+      "issuer": "did:e24:sim:0xbcc8f5d6376222ce5f399ffb288fc30c8768329b",
+      "validFrom": "2026-11-02T01:00:50Z",
+      "validUntil": "2027-05-01T01:00:50Z",
+      "credentialSubject": {
+        "version": 2,
+        "emisores": [
+          {
+            "id": "did:e24:sim:0xbcc8f5d6376222ce5f399ffb288fc30c8768329b",
+            "tipos": [
+              "CedulaE24"
+            ],
+            "prefijoAlias": "CA-V",
+            "perfil": "https://comunidad-a.example/e24/perfil.json",
+            "desde": "2026-11-01T00:00:00Z"
+          }
+        ],
+        "reconoceListas": []
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "cryptosuite": "ecdsa-secp256k1-jcs-e24-2026",
+        "verificationMethod": "did:e24:sim:0xbcc8f5d6376222ce5f399ffb288fc30c8768329b#delegado-0x375291216af88ddcfae5a268955768f5992e03d9",
+        "proofPurpose": "assertionMethod",
+        "created": "2026-11-02T01:00:50Z",
+        "proofValue": "z45us455jnT9k7JrjPfLG3NcHYa9AqKLuNNxth2iMQqdnVi5ZDd982171MD6HDpTk9kghGFeSC3s24X79noMw6xJx"
+      }
+    },
+    "https://comunidad-b.example/.well-known/e24-lista-confianza.json": {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://estado24.com/ns/e24/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "ListaConfianzaE24"
+      ],
+      "issuer": "did:e24:sim:0xa918dbba45ba003e3954d655ad12fd30bd98b554",
+      "validFrom": "2026-11-01T00:00:00Z",
+      "validUntil": "2027-04-30T00:00:00Z",
+      "credentialSubject": {
+        "version": 1,
+        "emisores": [],
+        "reconoceListas": [
+          {
+            "url": "https://comunidad-a.example/.well-known/e24-lista-confianza.json",
+            "issuer": "did:e24:sim:0xbcc8f5d6376222ce5f399ffb288fc30c8768329b"
+          }
+        ]
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "cryptosuite": "ecdsa-secp256k1-jcs-e24-2026",
+        "verificationMethod": "did:e24:sim:0xa918dbba45ba003e3954d655ad12fd30bd98b554#raiz",
+        "proofPurpose": "assertionMethod",
+        "created": "2026-11-01T00:00:00Z",
+        "proofValue": "z4NcU8Jn2Nwrvf8D7VtHD7z98E2FvXnriEnL49tufSXw1iumknQs3D3tk6FiXCbZQoVTK18Xfnue6vn9iSqwWfwF1"
+      }
+    }
+  }
+}

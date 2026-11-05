@@ -1,0 +1,29 @@
+{
+  "descargo": "SIMULACIÓN EDUCATIVA · red sim · claves de prueba · personas y comunidades ficticias · sin validez jurídica",
+  "contenido": {
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2",
+      "https://estado24.com/ns/e24/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "CedulaE24"
+    ],
+    "issuer": "did:e24:sim:0xc32d98908821f29a0b15871d93094d0088c611dc",
+    "validFrom": "2026-11-01T01:00:00Z",
+    "perfilEmisor": "https://comunidad-a.example/e24/perfil.json",
+    "credentialSubject": {
+      "id": "did:e24:sim:0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+      "numero": "C-0001",
+      "categoria": "Diaspora"
+    },
+    "proof": {
+      "type": "DataIntegrityProof",
+      "cryptosuite": "ecdsa-secp256k1-jcs-e24-2026",
+      "verificationMethod": "did:e24:sim:0xc32d98908821f29a0b15871d93094d0088c611dc#raiz",
+      "proofPurpose": "assertionMethod",
+      "created": "2026-11-01T01:00:00Z",
+      "proofValue": "z54YrAvg2GesdJcM2yRwt9brjQ455yCnBHX8YmgpiKMF6aRDftvRJrZKSvpTxv47KoLqVdXiXWhM8C32KUy2V8vaB"
+    }
+  }
+}

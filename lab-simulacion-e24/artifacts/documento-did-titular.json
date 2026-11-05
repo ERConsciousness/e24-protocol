@@ -1,0 +1,42 @@
+{
+  "descargo": "SIMULACIÓN EDUCATIVA · red sim · claves de prueba · personas y comunidades ficticias · sin validez jurídica",
+  "contenido": {
+    "@context": [
+      "https://www.w3.org/ns/did/v1",
+      "https://w3id.org/security/suites/secp256k1-2019/v1",
+      "https://w3id.org/security/suites/secp256k1recovery-2020/v2",
+      "https://estado24.com/ns/e24/v1"
+    ],
+    "id": "did:e24:sim:0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+    "controller": "did:e24:sim:0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+    "verificationMethod": [
+      {
+        "id": "did:e24:sim:0xdaa48b08502a20119dacdd7f12085a7c051f31be#raiz",
+        "controller": "did:e24:sim:0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "type": "EcdsaSecp256k1RecoveryMethod2020",
+        "blockchainAccountId": "e24sim:local:0x818a5fa52f3d5e346e4f2d121a07f84fb535d028"
+      },
+      {
+        "id": "did:e24:sim:0xdaa48b08502a20119dacdd7f12085a7c051f31be#delegado-0x92fecc4e3111db1e405ba95d9a9fec3b9c7d4e18",
+        "type": "EcdsaSecp256k1RecoveryMethod2020",
+        "controller": "did:e24:sim:0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "blockchainAccountId": "e24sim:local:0x92fecc4e3111db1e405ba95d9a9fec3b9c7d4e18"
+      }
+    ],
+    "authentication": [
+      "did:e24:sim:0xdaa48b08502a20119dacdd7f12085a7c051f31be#raiz",
+      "did:e24:sim:0xdaa48b08502a20119dacdd7f12085a7c051f31be#delegado-0x92fecc4e3111db1e405ba95d9a9fec3b9c7d4e18"
+    ],
+    "assertionMethod": [
+      "did:e24:sim:0xdaa48b08502a20119dacdd7f12085a7c051f31be#raiz",
+      "did:e24:sim:0xdaa48b08502a20119dacdd7f12085a7c051f31be#delegado-0x92fecc4e3111db1e405ba95d9a9fec3b9c7d4e18"
+    ],
+    "e24": {
+      "protocol": "E24-V1",
+      "network": "sim",
+      "resolverVersion": 1,
+      "estado": "activo",
+      "updatedAt": 1793840450
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "descargo": "SIMULACIÓN EDUCATIVA · red sim · claves de prueba · personas y comunidades ficticias · sin validez jurídica",
+  "contenido": [
+    {
+      "verificador": "V1 (confía en A)",
+      "momento": "2026-11-01T01:00:10Z",
+      "chequeos": {
+        "1_titular": true,
+        "2_firmaEmisor": true,
+        "3_anclada": true,
+        "4_sujetoEsTitular": true
+      },
+      "valida": true,
+      "reconocida": true,
+      "cadena": [
+        "https://comunidad-a.example/.well-known/e24-lista-confianza.json"
+      ],
+      "resultado": "Credencial válida · emisor reconocido por Comunidad A"
+    },
+    {
+      "verificador": "V2 (confía en B)",
+      "momento": "2026-11-01T01:00:20Z",
+      "chequeos": {
+        "1_titular": true,
+        "2_firmaEmisor": true,
+        "3_anclada": true,
+        "4_sujetoEsTitular": true
+      },
+      "valida": true,
+      "reconocida": true,
+      "cadena": [
+        "https://comunidad-b.example/.well-known/e24-lista-confianza.json",
+        "https://comunidad-a.example/.well-known/e24-lista-confianza.json"
+      ],
+      "resultado": "Credencial válida · emisor reconocido por Comunidad A, a quien reconoce Comunidad B"
+    },
+    {
+      "verificador": "V3 (sin listas)",
+      "momento": "2026-11-01T01:00:30Z",
+      "chequeos": {
+        "1_titular": true,
+        "2_firmaEmisor": true,
+        "3_anclada": true,
+        "4_sujetoEsTitular": true
+      },
+      "valida": true,
+      "reconocida": false,
+      "cadena": [],
+      "resultado": "Credencial válida · emisor no reconocido por ninguna de tus listas"
+    },
+    {
+      "verificador": "V1 con la cédula de C",
+      "momento": "2026-11-01T01:00:40Z",
+      "chequeos": {
+        "1_titular": true,
+        "2_firmaEmisor": true,
+        "3_anclada": true,
+        "4_sujetoEsTitular": true
+      },
+      "valida": true,
+      "reconocida": false,
+      "cadena": [],
+      "resultado": "Credencial válida · emisor no reconocido por ninguna de tus listas"
+    },
+    {
+      "verificador": "V2 con profundidad 0",
+      "momento": "2026-11-01T01:00:50Z",
+      "chequeos": {
+        "1_titular": true,
+        "2_firmaEmisor": true,
+        "3_anclada": true,
+        "4_sujetoEsTitular": true
+      },
+      "valida": true,
+      "reconocida": false,
+      "cadena": [],
+      "resultado": "Credencial válida · emisor no reconocido por ninguna de tus listas"
+    }
+  ]
+}

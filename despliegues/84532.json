@@ -1,0 +1,70 @@
+{
+  "protocolo": "E24-V1",
+  "rfc": "E24-RFC-0001",
+  "red": "baseSepolia",
+  "chainId": 84532,
+  "fecha": "2026-11-03T17:08:44.349Z",
+  "commit": "c02602512e6c525a91fa7ef30a2b5c1d92e904ac",
+  "arbolLimpio": true,
+  "cuentaDespliegue": "0xc5F9F9cFc40c7E3e1e2838302Ab0c16D2dd493f7",
+  "compilador": {
+    "version": "0.8.24",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "evmVersion": "cancun",
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "contratos": {
+    "ERC1056": {
+      "direccion": "0xdE8565d7E170F88CF21735B023d3C67eb491ecdB",
+      "tx": "0xbb6f3b42d980a39087021b823e721420b463ecd33bfbff52a8b1aefc1db1467b",
+      "bloque": 54019265,
+      "gas": "1072173",
+      "argumentos": [],
+      "keccakBytecodeDesplegado": "0x0a8f8383a78717338b8439e1cd319416fc99d30e1b1f435c86b1d2b495ff6b73",
+      "fuente": "ethr-did-registry@1.3.0 ethr-did-registry/contracts/EthereumDIDRegistry.sol:EthereumDIDRegistry",
+      "sha256Fuente": "996a83c78cc60e03b8406cf2d6768bae929a0f3a387c8a45e9df813065ae7a5c"
+    },
+    "E24AnchorRegistry": {
+      "direccion": "0x9c70A6c7DA22C9beb03C828F64fCae073608C3B2",
+      "tx": "0x9477058f3143353533f7c82364a5453fa9ecf89aad73b0b0672233897de09f3d",
+      "bloque": 54019270,
+      "gas": "935027",
+      "argumentos": [
+        "0xdE8565d7E170F88CF21735B023d3C67eb491ecdB"
+      ],
+      "keccakBytecodeDesplegado": "0x7d3723d68a1e88d828b1aaa29e3c61ac2527bc7e2eea6f712a6db72909137fea",
+      "fuente": "contracts/E24AnchorRegistry.sol",
+      "sha256Fuente": "a10c7a13c4e329e54e649b715f2cf7f2d2863a7cbaa650cf88f0a95df0ac49ef"
+    },
+    "E24Recovery": {
+      "direccion": "0xF076d4aD5Ad7d26545BF900d91CCAEf0321548D1",
+      "tx": "0xe1b37576bda08cabb143c35473dc12d615400f07f42e8f4ad5fff53443602c93",
+      "bloque": 54019275,
+      "gas": "3395283",
+      "argumentos": [
+        "0xdE8565d7E170F88CF21735B023d3C67eb491ecdB"
+      ],
+      "keccakBytecodeDesplegado": "0xd5d086a08cdb0735eb04ed4207973347ecb7076d68b54a4f1852e741995709a4",
+      "fuente": "contracts/E24Recovery.sol",
+      "sha256Fuente": "c48db61495603a34026c5af7b46449920491a13c66347f6c502e3df33766475a"
+    }
+  }
+}

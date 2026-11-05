@@ -1,0 +1,401 @@
+{
+  "_meta": {
+    "vector": "E24-RFC-0001 · Conformance Test Vector #1",
+    "vectorVersion": "1.1",
+    "rfcVersion": "0.5.3",
+    "licencia": "Apache-2.0 · © 2026 Ethereal Realms Consciousness LLC y contribuidores",
+    "descargo": "SIMULACIÓN EDUCATIVA · claves de PRUEBA derivadas de semillas públicas · sin datos personales · sin validez jurídica",
+    "reproducibilidad": "Determinístico: mismas semillas → mismos bytes. ECDSA RFC 6979 + normalización low-S.",
+    "canonicalizacion": "JCS (RFC 8785)"
+  },
+  "contexto": {
+    "url": "https://estado24.com/ns/e24/v1",
+    "sha256": "fd39317a85a985e32e193bf80a742e1232daaebf0a22070c12ccabcf5d29f4ed",
+    "archivo": "estado24/ns/e24/v1/context.jsonld"
+  },
+  "semillas": {
+    "titular": "E24-RFC-0001-TV1-TITULAR",
+    "emisor": "E24-RFC-0001-TV1-EMISOR",
+    "instanciaA": "E24-RFC-0001-TV1-INSTANCIA-A",
+    "instanciaB": "E24-RFC-0001-TV1-INSTANCIA-B",
+    "derivacion": "clave privada = SHA-256(semilla) como escalar secp256k1"
+  },
+  "claves": {
+    "titular": {
+      "privateKeyHex": "6ad1efd5ead04d74efd65081be13663e23b71d41b2f73b99d50f21ce1f3c2eab",
+      "publicKeyHex": "0x0433ca80a7ddcc2c9a252fb75a57a271d76b47d3723fd8d32f1fa7ec440b2e3cc32cf70ebf56a2c015f1878d6de958e7810e94273658712f45804a3331f2fe7304",
+      "ethAddress": "0x98fdd0e44df070339978bf8360e2ff5823bcc58c",
+      "didEth": "did:e24:eth:0x98fdd0e44df070339978bf8360e2ff5823bcc58c",
+      "didSim": "did:e24:sim:0x090776c042499fba69b60e2025193472a14711e1"
+    },
+    "emisor": {
+      "privateKeyHex": "269202f7ff133a7e9a2ab08b250fcacbe58ef365e1f3c89dfd1f11b9bbf8ccaa",
+      "publicKeyHex": "0x04ec6fb1f706bac667e948f9e54568c6fc1d2c273d79584eb7c31453bf4a8e0866dd1c37df2bd97cf69bd11c6451dc1a732dfe0f168b23822331640bc1bddd96a8",
+      "ethAddress": "0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14",
+      "didEth": "did:e24:eth:0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14",
+      "didSim": "did:e24:sim:0xfc5b7727ac590452acf2b1265c00287093bfc618"
+    },
+    "instanciaA": {
+      "privateKeyHex": "b9c8c36b36fdd64ef8f28273f72c1e027f30d41f5a296d1425009aaad23da3b0",
+      "publicKeyHex": "0x048c48c13b4564df156d25e1fbe91b1f52d1e1f147dd8f5d4e7a17c62772a23ba03e9d8d63403960337b52110060a23bbd3aa78216d00fdf3f934eedab48365068",
+      "ethAddress": "0xc54c96dfe077d752ccfbd4fd328cff3dbab837c7",
+      "didEth": "did:e24:eth:0xc54c96dfe077d752ccfbd4fd328cff3dbab837c7",
+      "didSim": "did:e24:sim:0x3112aa66b730dae53fdbc67393536dd89787451e"
+    },
+    "instanciaB": {
+      "privateKeyHex": "cb6ec5e5ab6b4d46fd4eeac3315c7603e77e42fffb8f2ef367c22e3efc11c73b",
+      "publicKeyHex": "0x042645cdd3a93393cfd8a7d9e2f148487de81be25d768cdead696e81a2631798ecf10e2e1d9c8b2908198fc7607ce559d04d947eddba771b4d7c4bad2876f16caa",
+      "ethAddress": "0xaa058e4b5b3836840359072956ef6dd36ba062a5",
+      "didEth": "did:e24:eth:0xaa058e4b5b3836840359072956ef6dd36ba062a5",
+      "didSim": "did:e24:sim:0x67cb95bddc63dcda177c390e64d2a550d5bfe834"
+    }
+  },
+  "documentosDid": {
+    "titular": {
+      "@context": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/suites/secp256k1recovery-2020/v2",
+        "https://estado24.com/ns/e24/v1"
+      ],
+      "id": "did:e24:eth:0x98fdd0e44df070339978bf8360e2ff5823bcc58c",
+      "controller": "did:e24:eth:0x98fdd0e44df070339978bf8360e2ff5823bcc58c",
+      "verificationMethod": [
+        {
+          "id": "did:e24:eth:0x98fdd0e44df070339978bf8360e2ff5823bcc58c#raiz",
+          "type": "EcdsaSecp256k1RecoveryMethod2020",
+          "controller": "did:e24:eth:0x98fdd0e44df070339978bf8360e2ff5823bcc58c",
+          "blockchainAccountId": "eip155:84532:0x98fdd0e44df070339978bf8360e2ff5823bcc58c"
+        }
+      ],
+      "authentication": [
+        "did:e24:eth:0x98fdd0e44df070339978bf8360e2ff5823bcc58c#raiz"
+      ],
+      "assertionMethod": [
+        "did:e24:eth:0x98fdd0e44df070339978bf8360e2ff5823bcc58c#raiz"
+      ],
+      "e24": {
+        "protocol": "E24-V1",
+        "network": "eth",
+        "resolverVersion": 1,
+        "estado": "activo"
+      }
+    },
+    "emisor": {
+      "@context": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/suites/secp256k1recovery-2020/v2",
+        "https://estado24.com/ns/e24/v1"
+      ],
+      "id": "did:e24:eth:0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14",
+      "controller": "did:e24:eth:0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14",
+      "verificationMethod": [
+        {
+          "id": "did:e24:eth:0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14#raiz",
+          "type": "EcdsaSecp256k1RecoveryMethod2020",
+          "controller": "did:e24:eth:0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14",
+          "blockchainAccountId": "eip155:84532:0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14"
+        }
+      ],
+      "authentication": [
+        "did:e24:eth:0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14#raiz"
+      ],
+      "assertionMethod": [
+        "did:e24:eth:0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14#raiz"
+      ],
+      "e24": {
+        "protocol": "E24-V1",
+        "network": "eth",
+        "resolverVersion": 1,
+        "estado": "activo"
+      }
+    },
+    "instanciaA": {
+      "@context": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/suites/secp256k1recovery-2020/v2",
+        "https://estado24.com/ns/e24/v1"
+      ],
+      "id": "did:e24:eth:0xc54c96dfe077d752ccfbd4fd328cff3dbab837c7",
+      "controller": "did:e24:eth:0xc54c96dfe077d752ccfbd4fd328cff3dbab837c7",
+      "verificationMethod": [
+        {
+          "id": "did:e24:eth:0xc54c96dfe077d752ccfbd4fd328cff3dbab837c7#raiz",
+          "type": "EcdsaSecp256k1RecoveryMethod2020",
+          "controller": "did:e24:eth:0xc54c96dfe077d752ccfbd4fd328cff3dbab837c7",
+          "blockchainAccountId": "eip155:84532:0xc54c96dfe077d752ccfbd4fd328cff3dbab837c7"
+        }
+      ],
+      "authentication": [
+        "did:e24:eth:0xc54c96dfe077d752ccfbd4fd328cff3dbab837c7#raiz"
+      ],
+      "assertionMethod": [
+        "did:e24:eth:0xc54c96dfe077d752ccfbd4fd328cff3dbab837c7#raiz"
+      ],
+      "e24": {
+        "protocol": "E24-V1",
+        "network": "eth",
+        "resolverVersion": 1,
+        "estado": "activo"
+      }
+    },
+    "instanciaB": {
+      "@context": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/suites/secp256k1recovery-2020/v2",
+        "https://estado24.com/ns/e24/v1"
+      ],
+      "id": "did:e24:eth:0xaa058e4b5b3836840359072956ef6dd36ba062a5",
+      "controller": "did:e24:eth:0xaa058e4b5b3836840359072956ef6dd36ba062a5",
+      "verificationMethod": [
+        {
+          "id": "did:e24:eth:0xaa058e4b5b3836840359072956ef6dd36ba062a5#raiz",
+          "type": "EcdsaSecp256k1RecoveryMethod2020",
+          "controller": "did:e24:eth:0xaa058e4b5b3836840359072956ef6dd36ba062a5",
+          "blockchainAccountId": "eip155:84532:0xaa058e4b5b3836840359072956ef6dd36ba062a5"
+        }
+      ],
+      "authentication": [
+        "did:e24:eth:0xaa058e4b5b3836840359072956ef6dd36ba062a5#raiz"
+      ],
+      "assertionMethod": [
+        "did:e24:eth:0xaa058e4b5b3836840359072956ef6dd36ba062a5#raiz"
+      ],
+      "e24": {
+        "protocol": "E24-V1",
+        "network": "eth",
+        "resolverVersion": 1,
+        "estado": "activo"
+      }
+    }
+  },
+  "cedula": {
+    "credencial": {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://estado24.com/ns/e24/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "CedulaE24"
+      ],
+      "issuer": "did:e24:eth:0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14",
+      "validFrom": "2026-11-01T00:00:00Z",
+      "perfilEmisor": "https://emisor.example/e24/perfil.json",
+      "credentialSubject": {
+        "id": "did:e24:eth:0x98fdd0e44df070339978bf8360e2ff5823bcc58c",
+        "numero": "PRUEBA-0001",
+        "categoria": "Diaspora"
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "cryptosuite": "ecdsa-secp256k1-jcs-e24-2026",
+        "verificationMethod": "did:e24:eth:0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14#raiz",
+        "proofPurpose": "assertionMethod",
+        "created": "2026-11-01T00:00:00Z",
+        "proofValue": "zxB6v5nt1sQTYSsryTQq7ctBEw5Hy5PdLN6G92o4dD3seyxEUYQra4qtXzQVaayaYxWAeE4yEmKtRGJWHTfixsLe"
+      }
+    },
+    "intermedios": {
+      "jcsConfigPrueba": "{\"@context\":[\"https://www.w3.org/ns/credentials/v2\",\"https://estado24.com/ns/e24/v1\"],\"created\":\"2026-11-01T00:00:00Z\",\"cryptosuite\":\"ecdsa-secp256k1-jcs-e24-2026\",\"proofPurpose\":\"assertionMethod\",\"type\":\"DataIntegrityProof\",\"verificationMethod\":\"did:e24:eth:0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14#raiz\"}",
+      "sha256ConfigPrueba": "18a5528a874b407ec7fabcce613d1c420fa20e30eb08cbb25b459046d57ce307",
+      "sha256DocumentoSinPrueba": "14525f80b3a9bb8a23f2c7198cea1978c9ba2d8686c5754855719698da310536",
+      "datosFirmados": "18a5528a874b407ec7fabcce613d1c420fa20e30eb08cbb25b459046d57ce30714525f80b3a9bb8a23f2c7198cea1978c9ba2d8686c5754855719698da310536"
+    },
+    "hashAncla": "19d4e79843ddef7b1e6c8abac4fdba5e32318a5390279f290366874fbccf604b"
+  },
+  "anclaEsperada": {
+    "hash": "0x19d4e79843ddef7b1e6c8abac4fdba5e32318a5390279f290366874fbccf604b",
+    "issuer": "0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14",
+    "anchoredAt": 1793491200,
+    "revoked": false
+  },
+  "reto": {
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2",
+      "https://estado24.com/ns/e24/v1"
+    ],
+    "type": "RetoE24",
+    "titular": "did:e24:eth:0x98fdd0e44df070339978bf8360e2ff5823bcc58c",
+    "nonce": "07bb4214aeb53d6e69018021c977184c",
+    "dominio": "verificador.example",
+    "creadoEn": "2026-11-02T12:00:00Z",
+    "proof": {
+      "type": "DataIntegrityProof",
+      "cryptosuite": "ecdsa-secp256k1-jcs-e24-2026",
+      "verificationMethod": "did:e24:eth:0x98fdd0e44df070339978bf8360e2ff5823bcc58c#raiz",
+      "proofPurpose": "authentication",
+      "created": "2026-11-02T12:00:00Z",
+      "proofValue": "z3HrDSD2VTzjc1RqmoXQFUVBQGLZfaeeZBtbwrSw5admRsRYDoJ97QP71ZAGUtcYU4m8QmgV2ietjhBLFZV6Rhmu5"
+    }
+  },
+  "listasConfianza": {
+    "https://instancia-a.example/.well-known/e24-lista-confianza.json": {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://estado24.com/ns/e24/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "ListaConfianzaE24"
+      ],
+      "issuer": "did:e24:eth:0xc54c96dfe077d752ccfbd4fd328cff3dbab837c7",
+      "validFrom": "2026-11-01T00:00:00Z",
+      "validUntil": "2027-05-01T00:00:00Z",
+      "credentialSubject": {
+        "version": 1,
+        "emisores": [
+          {
+            "id": "did:e24:eth:0x5b31bbff8ad527edaef0f10d61fd933a82a0cb14",
+            "tipos": [
+              "CedulaE24"
+            ],
+            "prefijoAlias": "PRUEBA",
+            "perfil": "https://emisor.example/e24/perfil.json",
+            "desde": "2026-11-01T00:00:00Z"
+          }
+        ],
+        "reconoceListas": []
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "cryptosuite": "ecdsa-secp256k1-jcs-e24-2026",
+        "verificationMethod": "did:e24:eth:0xc54c96dfe077d752ccfbd4fd328cff3dbab837c7#raiz",
+        "proofPurpose": "assertionMethod",
+        "created": "2026-11-01T00:00:00Z",
+        "proofValue": "z4WSK45Pc8tXSCFRCfyxYs8q5nJVue4HLsimqgxfNoxnGjET1XNVC3TdF8F6ztQ61mYbBKP9HrD5TvEBFawVKXtdN"
+      }
+    },
+    "https://instancia-b.example/.well-known/e24-lista-confianza.json": {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://estado24.com/ns/e24/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "ListaConfianzaE24"
+      ],
+      "issuer": "did:e24:eth:0xaa058e4b5b3836840359072956ef6dd36ba062a5",
+      "validFrom": "2026-11-01T00:00:00Z",
+      "validUntil": "2027-05-01T00:00:00Z",
+      "credentialSubject": {
+        "version": 1,
+        "emisores": [],
+        "reconoceListas": [
+          {
+            "url": "https://instancia-a.example/.well-known/e24-lista-confianza.json",
+            "issuer": "did:e24:eth:0xc54c96dfe077d752ccfbd4fd328cff3dbab837c7"
+          }
+        ]
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "cryptosuite": "ecdsa-secp256k1-jcs-e24-2026",
+        "verificationMethod": "did:e24:eth:0xaa058e4b5b3836840359072956ef6dd36ba062a5#raiz",
+        "proofPurpose": "assertionMethod",
+        "created": "2026-11-01T00:00:00Z",
+        "proofValue": "z59J1fZuLStQ5ZM9AUdcA1TNM2oo28sqEUXjfqHCt76HKvVPFLvAkuMbQmU1ShFWUJgQE77zbA1vvZv3Qm56Ai4Dh"
+      }
+    }
+  },
+  "verificacion": {
+    "momento": "2026-11-02T12:00:30Z",
+    "chequeos": {
+      "1_retoFirmadoPorTitular": true,
+      "2_firmaDelEmisor": true,
+      "3_anclada": "requiere anclaEsperada en E24AnchorRegistry",
+      "4_sujetoEsTitular": true
+    },
+    "reconocimiento": [
+      {
+        "raices": [
+          "https://instancia-a.example/.well-known/e24-lista-confianza.json"
+        ],
+        "profundidadMax": 1,
+        "esperado": {
+          "reconocido": true,
+          "cadena": [
+            "https://instancia-a.example/.well-known/e24-lista-confianza.json"
+          ]
+        }
+      },
+      {
+        "raices": [
+          "https://instancia-b.example/.well-known/e24-lista-confianza.json"
+        ],
+        "profundidadMax": 1,
+        "esperado": {
+          "reconocido": true,
+          "cadena": [
+            "https://instancia-b.example/.well-known/e24-lista-confianza.json",
+            "https://instancia-a.example/.well-known/e24-lista-confianza.json"
+          ]
+        }
+      },
+      {
+        "raices": [
+          "https://instancia-b.example/.well-known/e24-lista-confianza.json"
+        ],
+        "profundidadMax": 0,
+        "esperado": {
+          "reconocido": false,
+          "cadena": []
+        }
+      },
+      {
+        "raices": [],
+        "profundidadMax": 1,
+        "esperado": {
+          "reconocido": false,
+          "cadena": []
+        }
+      }
+    ]
+  },
+  "testsNegativos": [
+    {
+      "caso": "contenido alterado",
+      "alteracion": {
+        "campo": "credentialSubject.numero",
+        "de": "PRUEBA-0001",
+        "a": "PRUEBA-0002"
+      },
+      "hashAlterado": "50cb8c6004064a1f6b7c73259bad02ab2b755736d5678b16e9b50ab012934a89",
+      "esperado": "firma INVÁLIDA (chequeo 2) y hash no anclado (chequeo 3)"
+    },
+    {
+      "caso": "firma high-S",
+      "proofValueAlterado": "zxB6v5nt1sQTYSsryTQq7ctBEw5Hy5PdLN6G92o4dD3si175kU166Xt6Fko5c1VGYbX8dxA5Yq12HWu2t6a673x1",
+      "esperado": "RECHAZADA aunque ECDSA la acepte: E24-V1 exige low-S (s ≤ n/2)"
+    },
+    {
+      "caso": "proofValue sin multibase",
+      "proofValueAlterado": "2f948233eeccdb5d961c8edce944d10e2172de171693740a3753257a6af3cbcf6990ad14451678bdd9045c34b3827945b996501d2ca04fd51f2f18ca44102ee3",
+      "esperado": "RECHAZADA: proofValue DEBE ser multibase base58btc canónico"
+    },
+    {
+      "caso": "método de verificación sustituido",
+      "verificationMethodAlterado": "did:e24:eth:0x98fdd0e44df070339978bf8360e2ff5823bcc58c#raiz",
+      "esperado": "RECHAZADA: el método no pertenece al issuer y la configuración de la prueba está firmada"
+    },
+    {
+      "caso": "metadatos de la prueba alterados",
+      "alteracion": {
+        "campo": "proof.created",
+        "de": "2026-11-01T00:00:00Z",
+        "a": "2026-11-01T00:00:01Z"
+      },
+      "esperado": "RECHAZADA: SHA-256(JCS(config)) forma parte de lo firmado"
+    }
+  ],
+  "checks": [
+    "1. Derivar claves desde semillas → publicKeyHex, ethAddress, didEth y didSim exactos",
+    "2. Construir el documento DID por defecto de cada rol → igual a documentosDid",
+    "3. Reconstruir datosFirmados de la cédula (JCS + SHA-256) → igual a intermedios.datosFirmados",
+    "4. Verificar la cédula por recuperación con blockchainAccountId del emisor → válida",
+    "5. SHA-256(JCS(cédula con proof)) → igual a hashAncla",
+    "6. Verificar el reto con el documento del titular (proofPurpose authentication) → válido",
+    "7. Evaluar cada caso de reconocimiento → igual a 'esperado'",
+    "8. Reproducir cada test negativo → rechazado",
+    "9. SHA-256 del contexto local → igual a contexto.sha256"
+  ]
+}

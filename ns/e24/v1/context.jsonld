@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "e24ns": "https://estado24.com/ns/e24#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "CedulaE24": "e24ns:CedulaE24",
+    "ListaConfianzaE24": "e24ns:ListaConfianzaE24",
+    "E24ListaConfianza": "e24ns:E24ListaConfianza",
+    "RetoE24": {
+      "@id": "e24ns:RetoE24",
+      "@context": {
+        "@protected": true,
+        "proof": { "@id": "https://w3id.org/security#proof", "@type": "@id", "@container": "@graph" },
+        "titular": { "@id": "e24ns:titular", "@type": "@id" },
+        "nonce": "e24ns:nonce",
+        "dominio": "e24ns:dominio",
+        "creadoEn": { "@id": "e24ns:creadoEn", "@type": "xsd:dateTime" }
+      }
+    },
+
+    "e24": { "@id": "e24ns:metadatos", "@type": "@json" },
+
+    "numero": "e24ns:numero",
+    "categoria": "e24ns:categoria",
+    "perfilEmisor": { "@id": "e24ns:perfilEmisor", "@type": "@id" },
+
+    "version": { "@id": "e24ns:version", "@type": "xsd:integer" },
+    "emisores": {
+      "@id": "e24ns:emisores",
+      "@container": "@set",
+      "@context": {
+        "@protected": true,
+        "tipos": { "@id": "e24ns:tipos", "@type": "@vocab", "@container": "@set" },
+        "prefijoAlias": "e24ns:prefijoAlias",
+        "perfil": { "@id": "e24ns:perfil", "@type": "@id" },
+        "desde": { "@id": "e24ns:desde", "@type": "xsd:dateTime" }
+      }
+    },
+    "reconoceListas": {
+      "@id": "e24ns:reconoceListas",
+      "@container": "@set",
+      "@context": {
+        "@protected": true,
+        "url": { "@id": "e24ns:url", "@type": "@id" },
+        "issuer": { "@id": "https://www.w3.org/2018/credentials#issuer", "@type": "@id" }
+      }
+    }
+  }
+}

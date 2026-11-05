@@ -1,0 +1,11 @@
+# Finales de línea LF en todo el repositorio, en cualquier sistema operativo.
+* text=auto eol=lf
+
+# Archivos fijados por hash: git no debe tocar ni un byte.
+ns/e24/v1/context.jsonld -text
+ns/externos/*.jsonld -text
+rfc/E24-RFC-0001-test-vector-1.json -text
+lab-simulacion-e24/artifacts/** -text
+
+*.png binary
+*.pdf binary

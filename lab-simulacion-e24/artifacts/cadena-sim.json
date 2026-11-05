@@ -1,0 +1,236 @@
+{
+  "descargo": "SIMULACIÓN EDUCATIVA · red sim · claves de prueba · personas y comunidades ficticias · sin validez jurídica",
+  "contenido": {
+    "eventos": [
+      {
+        "t": 1793491200,
+        "contrato": "ERC1056",
+        "evento": "DIDDelegateChanged",
+        "identity": "0xbcc8f5d6376222ce5f399ffb288fc30c8768329b",
+        "delegateType": "veriKey",
+        "delegate": "0x9f51c56f996c2808fb3844f3543ea6ed0198be27",
+        "validTo": 1825027200
+      },
+      {
+        "t": 1793491200,
+        "contrato": "ERC1056",
+        "evento": "DIDAttributeChanged",
+        "identity": "0xbcc8f5d6376222ce5f399ffb288fc30c8768329b",
+        "name": "did/svc/E24ListaConfianza",
+        "value": "https://comunidad-a.example/.well-known/e24-lista-confianza.json",
+        "validTo": 1825027200
+      },
+      {
+        "t": 1793494800,
+        "contrato": "E24AnchorRegistry",
+        "evento": "CredentialAnchored",
+        "hash": "f4d2d1389993c3f4ca54924a586e48919892e3752a31b159129a003dc8f8745d",
+        "issuer": "0xbcc8f5d6376222ce5f399ffb288fc30c8768329b",
+        "sender": "0x9f51c56f996c2808fb3844f3543ea6ed0198be27"
+      },
+      {
+        "t": 1793494800,
+        "contrato": "E24AnchorRegistry",
+        "evento": "CredentialAnchored",
+        "hash": "7ff97be9d5d3cb30f62a7df5dbd94e80d15b2e603f5c360ac11040a6c0d10e14",
+        "issuer": "0xc32d98908821f29a0b15871d93094d0088c611dc",
+        "sender": "0xc32d98908821f29a0b15871d93094d0088c611dc"
+      },
+      {
+        "t": 1793581250,
+        "contrato": "ERC1056",
+        "evento": "DIDDelegateChanged",
+        "identity": "0xbcc8f5d6376222ce5f399ffb288fc30c8768329b",
+        "delegateType": "veriKey",
+        "delegate": "0x9f51c56f996c2808fb3844f3543ea6ed0198be27",
+        "validTo": 1793581250
+      },
+      {
+        "t": 1793581250,
+        "contrato": "ERC1056",
+        "evento": "DIDDelegateChanged",
+        "identity": "0xbcc8f5d6376222ce5f399ffb288fc30c8768329b",
+        "delegateType": "veriKey",
+        "delegate": "0x375291216af88ddcfae5a268955768f5992e03d9",
+        "validTo": 1825117250
+      },
+      {
+        "t": 1793581250,
+        "contrato": "E24AnchorRegistry",
+        "evento": "CredentialAnchored",
+        "hash": "cc0f17af6f301ad23e52617d62a0be56d9c934f1c17c58f05e1cd6d874469460",
+        "issuer": "0xbcc8f5d6376222ce5f399ffb288fc30c8768329b",
+        "sender": "0x375291216af88ddcfae5a268955768f5992e03d9"
+      },
+      {
+        "t": 1793581250,
+        "contrato": "E24AnchorRegistry",
+        "evento": "CredentialRevoked",
+        "hash": "cc0f17af6f301ad23e52617d62a0be56d9c934f1c17c58f05e1cd6d874469460",
+        "issuer": "0xbcc8f5d6376222ce5f399ffb288fc30c8768329b",
+        "sender": "0x375291216af88ddcfae5a268955768f5992e03d9"
+      },
+      {
+        "t": 1793581250,
+        "contrato": "ERC1056",
+        "evento": "DIDAttributeChanged",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "name": "e24/estado",
+        "value": "suspendido",
+        "validTo": 2108941250
+      },
+      {
+        "t": 1793581250,
+        "contrato": "ERC1056",
+        "evento": "DIDAttributeChanged",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "name": "e24/estado",
+        "value": "suspendido",
+        "validTo": 0
+      },
+      {
+        "t": 1793581250,
+        "contrato": "ERC1056",
+        "evento": "DIDOwnerChanged",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "owner": "0x818a5fa52f3d5e346e4f2d121a07f84fb535d028"
+      },
+      {
+        "t": 1793581250,
+        "contrato": "ERC1056",
+        "evento": "DIDDelegateChanged",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "delegateType": "sigAuth",
+        "delegate": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "validTo": 2108941250
+      },
+      {
+        "t": 1793581250,
+        "contrato": "ERC1056",
+        "evento": "DIDDelegateChanged",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "delegateType": "veriKey",
+        "delegate": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "validTo": 2108941250
+      },
+      {
+        "t": 1793581250,
+        "contrato": "ERC1056",
+        "evento": "DIDDelegateChanged",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "delegateType": "sigAuth",
+        "delegate": "0x1d53534fe89f03a08065533cbee0b10c15feb437",
+        "validTo": 1825117250
+      },
+      {
+        "t": 1793581250,
+        "contrato": "E24Recovery",
+        "evento": "WeakeningRequested",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "nuevoDueno": "0x85535b7b32d5acb3e7e965617fd769adce716b46",
+        "ejecutableEn": 1793840450
+      },
+      {
+        "t": 1793581250,
+        "contrato": "E24Recovery",
+        "evento": "WeakeningCancelled",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be"
+      },
+      {
+        "t": 1793581250,
+        "contrato": "E24Recovery",
+        "evento": "RecoveryInitiated",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "nuevaClave": "0x92fecc4e3111db1e405ba95d9a9fec3b9c7d4e18",
+        "ejecutableEn": 1793840450
+      },
+      {
+        "t": 1793840450,
+        "contrato": "ERC1056",
+        "evento": "DIDDelegateChanged",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "delegateType": "sigAuth",
+        "delegate": "0x1d53534fe89f03a08065533cbee0b10c15feb437",
+        "validTo": 1793840450
+      },
+      {
+        "t": 1793840450,
+        "contrato": "ERC1056",
+        "evento": "DIDDelegateChanged",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "delegateType": "sigAuth",
+        "delegate": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "validTo": 1793840450
+      },
+      {
+        "t": 1793840450,
+        "contrato": "ERC1056",
+        "evento": "DIDDelegateChanged",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "delegateType": "sigAuth",
+        "delegate": "0x92fecc4e3111db1e405ba95d9a9fec3b9c7d4e18",
+        "validTo": 2109200450
+      },
+      {
+        "t": 1793840450,
+        "contrato": "ERC1056",
+        "evento": "DIDDelegateChanged",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "delegateType": "veriKey",
+        "delegate": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "validTo": 1793840450
+      },
+      {
+        "t": 1793840450,
+        "contrato": "ERC1056",
+        "evento": "DIDDelegateChanged",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "delegateType": "veriKey",
+        "delegate": "0x92fecc4e3111db1e405ba95d9a9fec3b9c7d4e18",
+        "validTo": 2109200450
+      },
+      {
+        "t": 1793840450,
+        "contrato": "E24Recovery",
+        "evento": "RecoveryExecuted",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "nuevaClave": "0x92fecc4e3111db1e405ba95d9a9fec3b9c7d4e18"
+      },
+      {
+        "t": 1793840450,
+        "contrato": "E24Recovery",
+        "evento": "RecoveryInitiated",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+        "nuevaClave": "0xf621df53b7dbcef0e507298d7926671f4dfd3511",
+        "ejecutableEn": 1794099650
+      },
+      {
+        "t": 1793840450,
+        "contrato": "E24Recovery",
+        "evento": "RecoveryCancelled",
+        "identity": "0xdaa48b08502a20119dacdd7f12085a7c051f31be"
+      }
+    ],
+    "anclas": {
+      "f4d2d1389993c3f4ca54924a586e48919892e3752a31b159129a003dc8f8745d": {
+        "issuer": "0xbcc8f5d6376222ce5f399ffb288fc30c8768329b",
+        "anchoredAt": 1793494800,
+        "revoked": false
+      },
+      "7ff97be9d5d3cb30f62a7df5dbd94e80d15b2e603f5c360ac11040a6c0d10e14": {
+        "issuer": "0xc32d98908821f29a0b15871d93094d0088c611dc",
+        "anchoredAt": 1793494800,
+        "revoked": false
+      },
+      "cc0f17af6f301ad23e52617d62a0be56d9c934f1c17c58f05e1cd6d874469460": {
+        "issuer": "0xbcc8f5d6376222ce5f399ffb288fc30c8768329b",
+        "anchoredAt": 1793581250,
+        "revoked": true
+      }
+    },
+    "gasPorPagador": {
+      "0xc02d143124df79025985b0a6b1262438a8c90c2a": 18,
+      "0xc32d98908821f29a0b15871d93094d0088c611dc": 1
+    }
+  }
+}

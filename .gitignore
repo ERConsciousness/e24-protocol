@@ -1,0 +1,12 @@
+node_modules/
+/artifacts/
+/cache/
+/typechain-types/
+/coverage/
+coverage.json
+__pycache__/
+.env
+
+# Ensayos locales y estado de la demo (claves ficticias derivadas de la semilla)
+despliegues/local-*.json
+demo/

@@ -1,0 +1,32 @@
+{
+  "descargo": "SIMULACIÓN EDUCATIVA · red sim · claves de prueba · personas y comunidades ficticias · sin validez jurídica",
+  "contenido": {
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2",
+      "https://estado24.com/ns/e24/v1",
+      "https://comunidad-a.example/ns/cedula/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "CedulaE24"
+    ],
+    "issuer": "did:e24:sim:0xbcc8f5d6376222ce5f399ffb288fc30c8768329b",
+    "validFrom": "2026-11-01T01:00:00Z",
+    "perfilEmisor": "https://comunidad-a.example/e24/perfil.json",
+    "credentialSubject": {
+      "id": "did:e24:sim:0xdaa48b08502a20119dacdd7f12085a7c051f31be",
+      "numero": "CA-V-2026-000001",
+      "categoria": "Diaspora",
+      "nombre": "Persona Ficticia Uno",
+      "origen": "Ciudad Ficticia"
+    },
+    "proof": {
+      "type": "DataIntegrityProof",
+      "cryptosuite": "ecdsa-secp256k1-jcs-e24-2026",
+      "verificationMethod": "did:e24:sim:0xbcc8f5d6376222ce5f399ffb288fc30c8768329b#delegado-0x9f51c56f996c2808fb3844f3543ea6ed0198be27",
+      "proofPurpose": "assertionMethod",
+      "created": "2026-11-01T01:00:00Z",
+      "proofValue": "z4zRwRFpT66Dvhht9xG9UiydimHr8QVe1xcJwK5PtPuTH2exQ93pDBYtRidmCBSJnLTpAcmg5KiLB46knaWpUtcn8"
+    }
+  }
+}
